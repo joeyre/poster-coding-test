@@ -1,0 +1,45 @@
+$block-height: 100px;
+$small-block-height: 50px;
+$block-width: 77%;
+
+.colour-blocks {
+  transform: translateZ(1px) rotate(-45deg);
+  backface-visibility: hidden;
+  -ms-transform: rotate(-45deg);
+  -sand-transform: rotate(-45deg);
+
+  &__left {
+    float: left;
+    width: $block-width;
+  }
+
+  &__right {
+    float: right;
+    width: $block-width;
+  }
+}
+
+.colour-block {
+  display: block;
+  clear: both;
+
+  &--black {
+    width: 100%;
+    height: $block-height;
+    background: $black;
+  }
+
+  &--red {
+    height: $small-block-height;
+    background: $red;
+    width: 70%;
+    float: right;
+  }
+
+  &--green {
+    height: $small-block-height;
+    background: $green;
+    width: 70%;
+    float: left;
+  }
+}

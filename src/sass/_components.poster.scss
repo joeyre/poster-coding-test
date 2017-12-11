@@ -1,0 +1,15 @@
+.poster {
+  overflow: hidden;
+  padding-top: 60px;
+
+  &__content {
+    padding: 180px 10px 0;
+
+    &__col {
+      width: 25%;
+      float: left;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  }
+}
